@@ -1,0 +1,57 @@
+---
+const personalImageAlt = "Angel Urrutia";
+import Badge from "../components/Badge.astro";
+import EmailIcon from "../components/icons/Email.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import SocialPill from "../components/SocialPill.astro";
+---
+
+<img
+    class="rounded-full size-[35%] mb-6 mt-10"
+    src="/angelurrut.webp"
+    alt={personalImageAlt}
+/>
+<h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+>
+    Hey, Soy Angel
+    <a
+        href="https://www.linkedin.com/in/angelurrutdev/"
+        target="_blank"
+        rel="noopener"
+        class="flex justify-center items-center"
+    >
+        <Badge>Disponible para trabajar</Badge>
+    </a>
+</h1>
+<h2
+    class="text-2xl opacity-80 text-center mt-6 text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+>
+    <span>Mi nombre es</span>
+    <span class="font-bold dark:text-white">Angel Urrutia,</span>
+    <strong class="opacitiy-80"> soy Maquetador web y Frontend.</strong>
+     De
+    <span class="text-blue-300/90">Venezuela</span> Especializado en
+
+    <strong> crear webs y aplicaciones únicas.</strong>
+</h2>
+
+<nav class="flex gap-4 mt-8 flex-wrap">
+    <SocialPill
+        target="_blank"
+        href="https://www.linkedin.com/in/angelurrutdev/"
+    >
+        <LinkedInIcon class="size-4 md:size-6" />
+         LinkedIn
+    </SocialPill>
+
+    <SocialPill target="_blank" href="https://github.com/angelurrutdev">
+        <GitHubIcon class="size-4 md:size-6" />
+         GitHub
+    </SocialPill>
+    <SocialPill href="mailto:angeljurrut@gmail.com">
+        <EmailIcon class="size-4 md:size-6" />
+         angeljurrut@gmail.com
+    </SocialPill>
+</nav>

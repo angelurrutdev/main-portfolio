@@ -1,0 +1,42 @@
+---
+import EmailIcon from "../components/icons/Email.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import SocialPill from "../components/SocialPill.astro";
+import WhatsAppIcon from "../components/icons/Whatsapp.astro";
+---
+
+<section
+    class="mb-28 max-w-[45rem] mx-auto text-center leading-9 px-2 sm:mb-40 scroll-mt-28"
+>
+    <p class="text-pretty text-gray-600 dark:text-gray-300">
+        Para cualquier consulta o duda no dudes en contactarme.
+    </p>
+
+    <div
+        class="flex items-center justify-center pt-7 sm:pt-1 lg:grid-cols-4 gap-x-3 gap-y-3 w-40 mx-auto sm:w-full"
+    >
+        <SocialPill
+            target="_blank"
+            href="https://www.linkedin.com/in/angelurrutdev/"
+        >
+            <LinkedInIcon class="size-4 md:size-6" />
+             LinkedIn
+        </SocialPill>
+
+        <SocialPill target="_blank" href="https://github.com/angelurrutdev">
+            <GitHubIcon class="size-4 md:size-6" />
+             GitHub
+        </SocialPill>
+
+        <SocialPill href="mailto:angeljurrut@gmail.com">
+            <EmailIcon class="size-4 md:size-6" />
+             Email
+        </SocialPill>
+
+        <SocialPill target="_blank" href="https://wa.me/+584149456997">
+            <WhatsAppIcon class="size-4 md:size-6" />
+             WhatsApp
+        </SocialPill>
+    </div>
+</section>
