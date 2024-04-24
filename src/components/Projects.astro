@@ -5,9 +5,10 @@ import Tailwind from "./icons/Tailwind.astro";
 import CSS from "./icons/CSS.astro";
 import JS from "./icons/JavaScript.astro";
 import Link from "./icons/Link.astro";
-import ChevronsUp from "./icons/ChevronsUp.astro";
-import ChevronsDown from "./icons/ChevronsDown.astro";
 import LinkButton from "./LinkButton.astro";
+import Astroi from "./icons/Astroi.astro";
+import Svelte from "./icons/Svelte.astro";
+import React from "./icons/React.astro";
 
 const TAGS = {
     HTML: {
@@ -21,7 +22,7 @@ const TAGS = {
         icon: CSS,
     },
     TAILWIND: {
-        name: "Tailwind CSS",
+        name: "Tailwind",
         class: "bg-[#191d2d] text-white font-semibold",
         icon: Tailwind,
     },
@@ -30,6 +31,24 @@ const TAGS = {
         name: "JavaScript",
         class: "bg-[#191d2d] text-white font-semibold",
         icon: JS,
+    },
+
+    ASTROI: {
+        name: "Astro",
+        class: "bg-[#191d2d] text-white font-semibold",
+        icon: Astroi,
+    },
+
+    SVELTE: {
+        name: "Svelte",
+        class: "bg-[#191d2d] text-white font-semibold",
+        icon: Svelte,
+    },
+
+    REACT: {
+        name: "React",
+        class: "bg-[#191d2d] text-white font-semibold",
+        icon: React,
     },
 };
 const PROJECTS = [
@@ -41,6 +60,16 @@ const PROJECTS = [
         github: "https://github.com/angelurrutdev/Clon-macmini-M1",
         image: "/projects/MacMiniM1.webp",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JS],
+    },
+
+    {
+        title: "Spotify Clon Transitions",
+        description:
+            "Aplicación web de Spotify utilizando la API de View Transitions para mejorar la experiencia de navegación entre las páginas de la aplicación, logrando una transición fluida y agradable para el usuario. La aplicación cuenta con un reproductor de música que permanece activo incluso al cambiar de página.",
+        link: "https://spotify-clone-transitions.vercel.app/",
+        github: "https://github.com/angelurrutdev/spotify-clone-transitions",
+        image: "/projects/SpotifyCloneTransitions.webp",
+        tags: [TAGS.ASTROI, TAGS.SVELTE, TAGS.REACT, TAGS.TAILWIND],
     },
 ];
 ---
